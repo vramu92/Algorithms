@@ -1,6 +1,6 @@
 package com.meetmevenkat.sorting;
 
-public class radixSortExample {
+public class RadixSortExample {
 
     public static void main(String[] args) {
         String strings[] = {"bcdef", "dbaqc", "abcde", "omadd", "bbbbb", "aagsd"};
