@@ -1,5 +1,7 @@
 package com.meetmevenkat.trees.heap;
 
+import java.util.Arrays;
+
 public class Heap {
 
     private int[] heap;
@@ -59,7 +61,7 @@ public class Heap {
 
         int childToSwap;
 
-        while(index <= lastHeapIndex){
+        while(index < lastHeapIndex){
             int leftChild = getChild(index, true);
             int rightChild = getChild(index, false);
 
@@ -95,4 +97,10 @@ public class Heap {
         heap[index] = newValue;
     }
 
+    public void printHeap() {
+        for(int i=0; i<size; i++){
+            System.out.print(heap[i] + ", ");
+        }
+        System.out.println("");
+    }
 }
